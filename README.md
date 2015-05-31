@@ -41,3 +41,27 @@ h1, h2 {
   font-family: Georgia, "Times New Roman", Times, serif;
 }
 ```
+
+## Google Web Fonts
+
+[HTML](google-fonts/index.html) | [CSS](google-fonts/css/styles.css)
+
+A technique for including non web-safe fonts in web sites.
+
+[Google Fonts](https://www.google.com/fonts) is a collection of open source fonts that can be used for any purpose
+(eg: web, print etc.). Fonts will render on user's browsers, even if they don't have the font installed on their system.
+
+Can change the preview text, use Filters to narrow down the font selection,
+for example, uncheck "Handwriting" if not looking for that type of font.
+
+Change default size to smaller (eg: 14 px) when looking for font for paragraph text,
+to make sure it's legible at smaller size.
+
+Preview fonts at all sizes you plan to use them.
+
+Add all fonts you want to use to Collection, then click "Use" button.
+Then select desired styles for each font, for example: weight, bold, italic, etc.
+
+Note the page load meter, the more fonts you use on a page, the longer it will take to load.
+
+Copy the generated `<link...` to head section of main html page.
