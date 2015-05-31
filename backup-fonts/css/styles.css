@@ -1,0 +1,11 @@
+/* ---------------------------------- */
+/* Font Default */
+/* ---------------------------------- */
+
+body, html {
+  font-family: "Trebuchet MS", Helvetica, sans-serif;
+}
+
+h1, h2 {
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
