@@ -1,3 +1,16 @@
+<!-- START doctoc generated TOC please keep comment here to allow auto update -->
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+**Table of Contents**  *generated with [DocToc](http://doctoc.herokuapp.com/)*
+
+- [CSS3 Typography Techniques](#css3-typography-techniques)
+  - [Font Selection Basics](#font-selection-basics)
+  - [Providing Backup Fonts](#providing-backup-fonts)
+  - [Google Web Fonts](#google-web-fonts)
+  - [Font Face](#font-face)
+    - [Browser Support](#browser-support)
+
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
+
 CSS3 Typography Techniques
 ==========
 
@@ -65,3 +78,49 @@ Then select desired styles for each font, for example: weight, bold, italic, etc
 Note the page load meter, the more fonts you use on a page, the longer it will take to load.
 
 Copy the generated `<link...` to head section of main html page.
+
+## Font Face
+
+[HTML](font-face/index.html) | [CSS](font-face/css/styles.css)
+
+Another way to embed non web-safe fonts in the page is to use `@font-face` in css.
+In this case, your webserver hosts the font file (check the license includes distribution rights).
+
+For example, given a directory structure
+
+```
+my-project
+├── css
+│   └── styles.css
+├── fonts
+│   ├── Arvo-Regular.ttf
+│   └── OpenSans-Regular.ttf
+└── index.html
+```
+
+css `@font-face` src url attribute references font file path relative to css file location.
+
+```css
+@font-face {
+  font-family: Arvo;
+  src: url('../fonts/Arvo-Regular.ttf');
+}
+
+h1, h2 {
+  font-family: 'Arvo', serif;
+}
+```
+
+### Browser Support
+
+`@font-face` doesn't work in IE8. It can be used in IE9, but only recognizes `eot` (embedded open type font).
+Chrome, Safari and Opera recognize `ttf` or `otf` fonts (true type fonts).
+
+Example of IE9 support, given that you have the `.eot` file for Arvo font:
+
+```css
+@font-face {
+  font-family: Arvo;
+  src: url('../fonts/Arvo-Regular.ttf'), url('../fonts/Arvo-Regular.eot');
+}
+```

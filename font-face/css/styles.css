@@ -1,0 +1,21 @@
+/* ---------------------------------- */
+/* Font Default */
+/* ---------------------------------- */
+
+@font-face {
+  font-family: Arvo;
+  src: url('../fonts/Arvo-Regular.ttf');
+}
+
+@font-face {
+  font-family: OpenSans;
+  src: url('../fonts/OpenSans-Regular.ttf');
+}
+
+body, html {
+  font-family: 'OpenSans', sans-serif;
+}
+
+h1, h2 {
+  font-family: 'Arvo', serif;
+}
