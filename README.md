@@ -124,3 +124,38 @@ Example of IE9 support, given that you have the `.eot` file for Arvo font:
   src: url('../fonts/Arvo-Regular.ttf'), url('../fonts/Arvo-Regular.eot');
 }
 ```
+
+## Font Sizing
+
+[HTML](font-size/index.html) | [CSS](font-size/css/styles.css)
+
+### Defaults
+
+Default font size is what browser renders when no explicit font size is set in css.
+Most browsers' default font size is 16 pixels (`px`) or 12 points (`pt`).
+For web, avoid using points because that's designed for print (1 point = 1/72 inch).
+
+By default, header tags and all other (h1, h2, etc) font sizes are scaled relative to the browser default font size.
+
+For example, given `body` and `html` font size of 16px, h1 is 32px.
+But if change the html font size to 14px, h1 is 28px.
+
+```css
+body, html {
+  font-size: 14px;
+}
+```
+
+### Percentages
+
+Setting 100% is equivalent to using browser default. For example, this will be effectively 16px
+
+```css
+body, html {
+  font-size: 100%;
+}
+```
+
+Setting 120% will make font size 20% larger than default.
+
+(4:25)
