@@ -8,6 +8,12 @@
   - [Google Web Fonts](#google-web-fonts)
   - [Font Face](#font-face)
     - [Browser Support](#browser-support)
+  - [Font Sizing](#font-sizing)
+    - [Defaults](#defaults)
+    - [Percentages](#percentages)
+    - [em](#em)
+    - [rem](#rem)
+    - [Recommendations](#recommendations)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
@@ -156,6 +162,56 @@ body, html {
 }
 ```
 
-Setting 120% will make font size 20% larger than default.
+Setting 120% will make font size 20% larger than default, or 80% will make it smaller.
 
-(4:25)
+Using percentages is a powerful technique, especially for mobile,
+because the default font size on mobile browsers could be different than the default font size on desktop browser.
+
+### em
+
+`1em` is equivalent to 100%, so it functions like a ratio. For example, this would render as the default size
+
+```css
+body, html {
+  font-size: 1em;
+}
+```
+
+To make the text proportionally smaller, set for example `.8em`
+
+Issue with em units is that they're relative to _parent_ element,
+so nested tags of the same type can end up getting smaller and smaller text. For example
+
+```css
+p {
+  font-size: 1em;
+}
+span {
+  font-size: 0.8em;
+}
+```
+
+```
+<p>
+  Some regular text, this will be rendered at 1em, i.e. 100% of the default browser font size.
+  <span>
+    This will be 0.8em because of the span rule defined above, so 20% smaller than its parent <p>.
+    <span>
+      Uh oh, this is 20% smaller than the already 20% smaller of the parent span, because that's how ems work,
+      relative to parent.
+    </span>
+  </span>
+</p>
+```
+
+### rem
+
+Root em, solves the proportional nesting issue of ems.
+All sizes are relative to the _root_ of the document instead of relative to the _parent_ element.
+
+### Recommendations
+
+So many different ways to size font, which to use?
+
+Many designers recommend using [percentage]((#percentages)) for the body,
+then use [em](#em) or [rem](#rem) for everything else.

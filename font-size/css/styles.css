@@ -15,9 +15,23 @@
 body, html {
   font-family: 'OpenSans', sans-serif;
   /* font-size: 14px; */
-  font-size: 120%;
+  /* font-size: 120%; */
+  /* font-size: 80%; */
+  /* font-size: .8em; */
+  /* font-size: 1em; */
+  font-size: 100%;
 }
 
 h1, h2 {
   font-family: 'Arvo', serif;
+}
+
+p {
+  font-size: 0.9em;
+}
+
+span {
+  /* font-size: 0.8em; */
+  font-size: 0.8rem;
+  color: rgb(159, 30, 198);
 }
