@@ -14,6 +14,10 @@
     - [em](#em)
     - [rem](#rem)
     - [Recommendations](#recommendations)
+  - [Spacing for Legibility](#spacing-for-legibility)
+    - [Letter Spacing](#letter-spacing)
+    - [Line Spacing](#line-spacing)
+    - [Line Width](#line-width)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
@@ -213,5 +217,64 @@ All sizes are relative to the _root_ of the document instead of relative to the 
 
 So many different ways to size font, which to use?
 
-Many designers recommend using [percentage]((#percentages)) for the body,
+Many designers recommend using [percentage](#percentages) for the body,
 then use [em](#em) or [rem](#rem) for everything else.
+
+## Spacing for Legibility
+
+[HTML](spacing/index.html) | [CSS](spacing/css/styles.css)
+
+### Letter Spacing
+
+Some fonts at a small size look a little cluttered and get hard to read.
+Use `letter-spacing` to space out the individual characters.
+For consistency, use same units as whatever is specified for `font-size`.
+
+```css
+p {
+  font-size: .9em;
+  letter-spacing: 0.1em;
+}
+```
+
+### Line Spacing
+
+For some fonts, default spacing between lines is not enough to make it legible.
+This can be increased via css to make it more pleasant to read.
+
+```css
+p {
+  line-height: 1.6em;
+}
+```
+
+Note that `line-height` is not a measure of the space between the lines,
+but rather a measure of the height of the line itself.
+Therefore setting it to the same value as the text size will make the lines bump up against each other.
+
+For optimal legibility, set `line-height` to at least a little bit more than `font-size`.
+
+### Line Width
+
+Not good to have line go on too wide across screen, because when user has to go to next line, could skip a few.
+
+This is controlled by applying a `width` on the container element, rather than individual paragraph elements.
+
+```
+<div class="container">
+  <p>Content here...</p>
+  <p>More content...</p>
+  etc...
+</div>
+```
+
+```css
+.container {
+  width: 72em;
+}
+```
+
+Note width can be set in em units if you know exactly how characters you want each line to take up.
+But typically want more control over width of container, eg `width: 500px`
+
+Lines that are too narrow are also hard to read cause the eyes have to dart back and forth too quickly.
