@@ -18,6 +18,8 @@
     - [Letter Spacing](#letter-spacing)
     - [Line Spacing](#line-spacing)
     - [Line Width](#line-width)
+  - [Text Color](#text-color)
+  - [Callouts](#callouts)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
@@ -307,3 +309,12 @@ This reduces the _visual weight_ of the content.
   color: #666;
 }
 ```
+
+## Callouts
+
+[HTML](callouts/index.html) | [CSS](callouts/css/styles.css)
+
+A callout can be used to apply _visual weight_ to a piece of text.
+Often used in magazine or news articles, for exmple, to emphasize a quote.
+
+Technique is to make a copy of the sentence and make it stand out in a _callout_.
