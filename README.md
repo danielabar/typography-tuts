@@ -278,3 +278,32 @@ Note width can be set in em units if you know exactly how characters you want ea
 But typically want more control over width of container, eg `width: 500px`
 
 Lines that are too narrow are also hard to read cause the eyes have to dart back and forth too quickly.
+
+## Text Color
+
+[HTML](text-color/index.html) | [CSS](text-color/css/styles.css)
+
+Color can be used to enhance or alter the _visual hierarchy_ of a site.
+
+Some content is more important than others. Color can be used to make some text stand out or step back.
+
+For example, to make sidebar content recede into the background a little (so it doesn't compete with main content),
+could change color from black to a medium grey, given that main content is black on white.
+
+```css
+.sidebar p {
+  color: #888;
+}
+```
+
+Another option is to reduce the contrast between foreground and background colors of content that should be de-emphasized.
+This reduces the _visual weight_ of the content.
+
+```css
+.sidebar {
+  background-color: #999;
+}
+.sidebar p {
+  color: #666;
+}
+```
