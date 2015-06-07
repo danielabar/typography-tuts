@@ -20,6 +20,7 @@
     - [Line Width](#line-width)
   - [Text Color](#text-color)
   - [Callouts](#callouts)
+  - [Emphasizing Text](#emphasizing-text)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
@@ -318,3 +319,36 @@ A callout can be used to apply _visual weight_ to a piece of text.
 Often used in magazine or news articles, for exmple, to emphasize a quote.
 
 Technique is to make a copy of the sentence and make it stand out in a _callout_.
+
+```
+<p>Some long text here yada yad Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Make this sentence standout with a callout. Quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.<p>
+<p class="callout">Make this sentence standout with a callout</p>
+<p>More regular text here...</p>
+```
+
+```css
+.callout {
+  box-sizing: border-box;
+  background-color: #ddd;
+  font-size: 1.2em;
+  line-height: 1.3em;
+  width: 208px;
+  float: left;
+  margin: 0 10px 10px 0;
+  padding: 10px;
+}
+```
+
+## Emphasizing Text
+
+[HTML](emphasizing-text/index.html) | [CSS](emphasizing-text/css/styles.css)
+
+Another way to add _visual weight_ to certain pieces of text is to use `font-style` and `font-weight`.
+
+HTML tags `<strong>` and `<emphasis>` can be used to make text bold and italic respectively.
+
+Using these tags can break up long text by reducing the visual monotony, and create some visual interest.
+
+Using bold text to highlight key sentences in article can help readers that are in a hurry skim through it.
+
+6:15
