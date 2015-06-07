@@ -21,6 +21,8 @@
   - [Text Color](#text-color)
   - [Callouts](#callouts)
   - [Emphasizing Text](#emphasizing-text)
+  - [Small Caps](#small-caps)
+    - [When it comes to typography in design, every decision you make has consequences.](#when-it-comes-to-typography-in-design-every-decision-you-make-has-consequences)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
@@ -391,3 +393,23 @@ em {
 
 Do NOT use deprecated `<bold>` and `<italic>` tags. Those have been deprecated in favour of
 `<strong>` and `<em>` tags respectively because they're more semantic.
+
+## Small Caps
+
+[HTML](small-caps/index.html) | [CSS](small-caps/css/styles.css)
+
+CSS property `font-variant` that applies small caps to text. For example
+
+```
+<h3 class="subtitle">When it comes to typography in design, every decision you make has consequences.</h3>
+```
+
+```css
+.subtitle {
+  font-variant: small-caps;
+}
+```
+
+This makes regular capital letters larger, and the other letters in capitals as well, but a little smaller.
+
+When used with a serif font, gives an "old style" newspaper look.
