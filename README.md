@@ -201,7 +201,7 @@ span {
 }
 ```
 
-```
+```html
 <p>
   Some regular text, this will be rendered at 1em, i.e. 100% of the default browser font size.
   <span>
@@ -266,7 +266,7 @@ Not good to have line go on too wide across screen, because when user has to go 
 
 This is controlled by applying a `width` on the container element, rather than individual paragraph elements.
 
-```
+```html
 <div class="container">
   <p>Content here...</p>
   <p>More content...</p>
@@ -323,7 +323,7 @@ Often used in magazine or news articles, for exmple, to emphasize a quote.
 
 Technique is to make a copy of the sentence and make it stand out in a _callout_.
 
-```
+```html
 <p>Some long text here yada yad Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Make this sentence standout with a callout. Quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.<p>
 <p class="callout">Make this sentence standout with a callout</p>
 <p>More regular text here...</p>
@@ -401,7 +401,7 @@ Do NOT use deprecated `<bold>` and `<italic>` tags. Those have been deprecated i
 
 CSS property `font-variant` that applies small caps to text. For example
 
-```
+```html
 <h3 class="subtitle">When it comes to typography in design, every decision you make has consequences.</h3>
 ```
 
@@ -423,7 +423,7 @@ Most of the time, text is aligned to the left, especially for paragraphs and lon
 
 But for headings, or "call to action" text inside of a button, may want to center it.
 
-```
+```html
 <h1 class="header-text">CSS3 Typography Techniques</h1>
 ```
 
@@ -439,7 +439,7 @@ Otherwise, it gets difficult to read.
 
 To right align text, for example, to make a block quote stand out in a different way
 
-```
+```html
 <blockquote>Some text to stand out yada yada...</blockquote>
 ```
 
@@ -455,3 +455,44 @@ blockquote {
 ## Using Lists
 
 [HTML](lists/index.html) | [CSS](lists/css/styles.css)
+
+* Another technique for breaking up the monotony of a long text page
+* Help reader skim through the document to find what they're looking for
+* Organize the content in a way that makes sense, makes the article seem more coherent
+
+Doesn't necessarily mean adding ordered or unordered html list tags.
+Could be simply adding small headers before each main paragraph of the content.
+
+```html
+<h3 class="section-header">1. This is the title of the first section</h3>
+<p>Some body content blah blah...</p>
+<p>Could be more stuff here...</p>
+<h3 class="section-header">2. This is the second of the first section</h3>
+<p>Some more body content blah blah...</p>
+```
+
+```css
+.section-header {
+  margin-top: 30px;
+}
+```
+
+Use html `<ol>` or `<ul>` tags for lists of content. For example if article provides step by step instructions how to accomplish some task.
+
+```html
+<p>In order to create a wreath, you need to purchase the following items:</p>
+<ul>
+  <li>One wreath frame</li>
+  <li>Some burlap</li>
+  <li>One quart of burlap glue</li>
+  <li>One bow</li>
+</ul>
+```
+
+The unordered list can be styled to make it fit in with the rest of the body text better, for example
+
+```css
+ul {
+  margin: 10px 0 10px 20px;
+}
+```
