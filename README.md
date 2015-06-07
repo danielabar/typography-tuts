@@ -22,9 +22,8 @@
   - [Callouts](#callouts)
   - [Emphasizing Text](#emphasizing-text)
   - [Small Caps](#small-caps)
-    - [When it comes to typography in design, every decision you make has consequences.](#when-it-comes-to-typography-in-design-every-decision-you-make-has-consequences)
   - [Text Alignment](#text-alignment)
-- [CSS3 Typography Techniques](#css3-typography-techniques-1)
+  - [Using Lists](#using-lists)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
@@ -366,7 +365,7 @@ Can also style text as italic or bold with css. For example
 or
 
 ```css
-.ca..out {
+.callout {
   font-weight: bold;
 }
 ```
@@ -452,3 +451,7 @@ blockquote {
   text-align: right;
 }
 ```
+
+## Using Lists
+
+[HTML](lists/index.html) | [CSS](lists/css/styles.css)
