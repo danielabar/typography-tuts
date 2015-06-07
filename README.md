@@ -351,4 +351,43 @@ Using these tags can break up long text by reducing the visual monotony, and cre
 
 Using bold text to highlight key sentences in article can help readers that are in a hurry skim through it.
 
-6:15
+Can also style text as italic or bold with css. For example
+
+```css
+.callout {
+  font-style: italic;
+}
+```
+
+or
+
+```css
+.ca..out {
+  font-weight: bold;
+}
+```
+
+Can also style the `<strong>` and `<em>` tags with css to make them look different than default browser behaviour.
+
+For example, to make `strong` not bold, but instead larger and a different color:
+
+```css
+strong {
+  font-size: 1.3em;
+  color: rgb(218, 51, 101);
+  font-weight: normal;
+}
+```
+
+To make `em` not italic, but instead have a grey background color:
+
+```css
+em {
+  background-color: #eee;
+  font-style: normal;
+}
+```
+
+
+Do NOT use deprecated `<bold>` and `<italic>` tags. Those have been deprecated in favour of
+`<strong>` and `<em>` tags respectively because they're more semantic.
