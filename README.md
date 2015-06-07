@@ -23,6 +23,8 @@
   - [Emphasizing Text](#emphasizing-text)
   - [Small Caps](#small-caps)
     - [When it comes to typography in design, every decision you make has consequences.](#when-it-comes-to-typography-in-design-every-decision-you-make-has-consequences)
+  - [Text Alignment](#text-alignment)
+- [CSS3 Typography Techniques](#css3-typography-techniques-1)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
@@ -413,3 +415,40 @@ CSS property `font-variant` that applies small caps to text. For example
 This makes regular capital letters larger, and the other letters in capitals as well, but a little smaller.
 
 When used with a serif font, gives an "old style" newspaper look.
+
+## Text Alignment
+
+[HTML](text-alignment/index.html) | [CSS](text-alignment/css/styles.css)
+
+Most of the time, text is aligned to the left, especially for paragraphs and long blocks of text.
+
+But for headings, or "call to action" text inside of a button, may want to center it.
+
+```
+<h1 class="header-text">CSS3 Typography Techniques</h1>
+```
+
+```css
+.header-text {
+  text-align: center;
+}
+```
+
+In general, centered text looks good if it's all on one line, example a heading.
+Or if it's two or three lines, and they're all close to or equal in length.
+Otherwise, it gets difficult to read.
+
+To right align text, for example, to make a block quote stand out in a different way
+
+```
+<blockquote>Some text to stand out yada yada...</blockquote>
+```
+
+```css
+blockquote {
+  background-color: #eee;
+  padding: 10px;
+  border-right: 10px solid #ddd;
+  text-align: right;
+}
+```
