@@ -496,3 +496,38 @@ ul {
   margin: 10px 0 10px 20px;
 }
 ```
+
+## Text Decoration
+
+[HTML](text-decoration/index.html) | [CSS](text-decoration/css/styles.css)
+
+`text-decoration` property is used to underline, overline or strikethrough.
+Default value is `none`. For a link, default value is `underline`.
+
+Keep in mind user's expectations. For example, if text is underlined, most users will assume it's clickable.
+Therefore don't underline text unless it actually is a link or you have a really good reason to do so.
+
+For example, to put a line over the text
+
+```html
+<p>
+  Some paragraph text...
+  <span class="decorate">this text should be decorated</span>
+  more paragraph text
+</p>
+```
+
+```css
+.decorate {
+  text-decoration: overline;
+}
+```
+Overline not used very often. One example usage could be to change appearance of link when hovered over
+
+```css
+a:hover {
+  text-decoration: overline;
+}
+```
+
+5:15
