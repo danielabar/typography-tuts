@@ -23,7 +23,7 @@
   - [Emphasizing Text](#emphasizing-text)
   - [Small Caps](#small-caps)
   - [Text Alignment](#text-alignment)
-  - [Using Lists](#using-lists)
+  - [Text Decoration](#text-decoration)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
@@ -530,4 +530,18 @@ a:hover {
 }
 ```
 
-5:15
+Another text-decoration value is `line-through` which creates a strikeout effect.
+
+```html
+I <span class="decorate">like</span> love typography.
+```
+
+```css
+.decorate {
+  text-decoration: line-through;
+}
+```
+
+Can also set `text-decoration` to `none` to remove default browser styling for anchor tags,
+for example, if its being styled as a button and is otherwise very obvious that it's clickable,
+then the underline is not needed.

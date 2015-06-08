@@ -107,7 +107,13 @@ ul {
 
 .decorate {
   /* text-decoration: underline; */
-  text-decoration: overline;
+  /* text-decoration: overline; */
+  text-decoration: line-through;
+}
+
+a {
+  text-decoration: none;
+  color: rgb(26, 122, 223);
 }
 
 a:hover {
