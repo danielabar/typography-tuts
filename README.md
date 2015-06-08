@@ -23,7 +23,9 @@
   - [Emphasizing Text](#emphasizing-text)
   - [Small Caps](#small-caps)
   - [Text Alignment](#text-alignment)
+  - [Using Lists](#using-lists)
   - [Text Decoration](#text-decoration)
+  - [Text Overflow](#text-overflow)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
@@ -545,3 +547,31 @@ I <span class="decorate">like</span> love typography.
 Can also set `text-decoration` to `none` to remove default browser styling for anchor tags,
 for example, if its being styled as a button and is otherwise very obvious that it's clickable,
 then the underline is not needed.
+
+## Text Overflow
+
+[HTML](text-overflow/index.html) | [CSS](text-overflow/css/styles.css)
+
+For example, say you have a container that displays the most recent blog posts, which are pulled from a CMS or database.
+You don't know in advance how big that text will be. Can change the way the text behaves when it _overflows_ its container div.
+
+For example, to cut off the paragraphs at container width and show "..."
+
+```html
+<ul class="blog-list">
+  <li><h4>Blog Title 1</h4>
+    <p> Some really long text</p>
+  </li>
+  <li><h4>Blog Title 2</h4>
+    <p> Some more really long text</p>
+  </li>
+</ul>
+```
+
+```css
+.blog-list p {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+```
