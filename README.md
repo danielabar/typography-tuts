@@ -23,9 +23,11 @@
   - [Emphasizing Text](#emphasizing-text)
   - [Small Caps](#small-caps)
   - [Text Alignment](#text-alignment)
+  - [Using Lists](#using-lists)
   - [Text Decoration](#text-decoration)
   - [Text Overflow](#text-overflow)
   - [Text Shadows](#text-shadows)
+  - [Summary](#summary)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
@@ -593,3 +595,10 @@ To make a text shadow that is 2px to the right of the text, 3px down from the te
 
 Watch out: Don't get `box-shadow` and `text-shadow` mixed up. Box shadow applies to a div container,
 whereas text shadow applies to individual letters.
+
+## Summary
+
+Typography is in part an art form, and somewhat subjective. However, a few key rules to keep in mind:
+
+* Provide an easy and pleasant reading experience
+* Only use one or two different types of fonts in a given design, any more may look clutterred and indecisive
