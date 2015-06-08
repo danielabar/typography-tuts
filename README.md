@@ -23,9 +23,9 @@
   - [Emphasizing Text](#emphasizing-text)
   - [Small Caps](#small-caps)
   - [Text Alignment](#text-alignment)
-  - [Using Lists](#using-lists)
   - [Text Decoration](#text-decoration)
   - [Text Overflow](#text-overflow)
+  - [Text Shadows](#text-shadows)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
@@ -575,3 +575,21 @@ For example, to cut off the paragraphs at container width and show "..."
   text-overflow: ellipsis;
 }
 ```
+
+## Text Shadows
+
+[HTML](text-shadows/index.html) | [CSS](text-shadows/css/styles.css)
+
+First two values for `text-shadow` are the horizontal and vertical positions of the shadow.
+Third value is blur distance (optional), and fourth value is shadow color (also optional).
+
+To make a text shadow that is 2px to the right of the text, 3px down from the text, 4px of blur distance, and light grey:
+
+```css
+.header-text {
+  text-shadow: 2px 3px 4px #bbb;
+}
+```
+
+Watch out: Don't get `box-shadow` and `text-shadow` mixed up. Box shadow applies to a div container,
+whereas text shadow applies to individual letters.
